@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Desde"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                />
+           <!-- <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desde_text"
+                android:inputType="number|numberDecimal"
+                android:maxLength="2"
+                android:digits="0123456789"              /> -->
+
+
+            <Spinner
+                android:id="@+id/desde_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Hasta"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                />
+
+            <Spinner
+                android:id="@+id/hasta_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hasta_text"
+                android:inputType="number|none"
+                android:maxLength="3"
+                android:digits="0123456789"               />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

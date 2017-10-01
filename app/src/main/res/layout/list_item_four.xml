@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/user_image"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/user_name"
+          android:layout_toRightOf="@+id/user_image"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="5dp"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+
+
+          />
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:id="@+id/container_image"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/image_item"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/image_item_two"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+             android:id="@+id/image_item_three"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+             android:id="@+id/image_item_four"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container_actions"
+    android:padding="10dp"
+   >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/hearh_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/zzz_heart_outline"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/comment_icon"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/hearh_icon"
+        android:layout_centerVertical="true"
+
+        android:src="@drawable/zzz_comment_outline"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/send_icon"
+        android:layout_toRightOf="@+id/comment_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+
+        android:src="@drawable/zzz_send"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/bookmark_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:src="@drawable/zzz_bookmark_outline"/>
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Me gusta"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_comment"
+            android:textStyle="bold"
+            android:text="Cristian Garcia"
+            android:textColor="@color/black"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_comment"
+            android:id="@+id/comment_content"
+            android:text="Este es un mensaje de prueba"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hace 2 horas"
+        android:textColor="@color/grey_text"
+        android:textSize="13sp"
+        />
+</LinearLayout>
+
+</LinearLayout>

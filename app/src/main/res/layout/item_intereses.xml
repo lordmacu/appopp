@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/contenedorItemGrid"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="@color/violet"
+            app:si_enabled="false"
+            app:si_tint_color="@color/colorPrimary"
+            app:srcCompat="@drawable/zzz_human_male"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="aqui"
+            android:id="@+id/text_grid_item"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

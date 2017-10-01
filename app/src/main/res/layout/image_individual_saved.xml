@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        card_view:cardElevation="4dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/contenedor_imagenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/container_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/container_image_1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image_item_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="center"
+
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image_item_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="center"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_image_2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image_item_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_item_two_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp" />
+
+                    <ImageView
+                        android:id="@+id/image_item_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container_image_3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_item_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp" />
+
+                    <ImageView
+                        android:id="@+id/image_item_two_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_item_three_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp" />
+
+                    <ImageView
+                        android:id="@+id/image_item_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="9dp"
+                android:paddingTop="4dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/user_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/empty_profile"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+
+                <TextView
+                    android:id="@+id/saved_text_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="aqui" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

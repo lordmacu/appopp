@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Opps</string>
+    <string name="hint_description">Haz un comentario o escribe o una Pregunta</string>
+
+    <array name="tab_name">
+        <item>Home</item>
+        <item>Search</item>
+        <item>Share</item>
+        <item>News</item>
+        <item>Profile</item>
+    </array>
+
+    <string name="facebook_app_id">550109465379772</string>
+    <string name="fb_login_protocol_scheme">fb550109465379772</string>
+    <string name="progress_title">Procesando..</string>
+
+    <string name="done">Finalizar</string>
+
+
+    <string-array name="tab_titles">
+        <item>Cámara</item>
+        <item>Gallería</item>
+    </string-array>
+
+
+    <string name="toolbar_title">Seleccionar Imagen</string>
+    <string name="no_image">Sin Imagen</string>
+
+    <string name="selected_image">Imágenes Seleccionadas</string>
+
+
+    <string name="max_count_msg">%1$d images selected already</string>
+    <string name="min_count_msg">you have to choice %1$d images</string>
+
+    <string name="focusing">Haciendo focus/flash... espera un minuto</string>
+
+
+    <string name="default_directory">Imágenes</string>
+    <string name="title_activity_individual">IndividualActivity</string>
+</resources>

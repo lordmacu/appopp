@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cv="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/rl"
+
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/first_square"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/zzz_calendar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Edad"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/result_age"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="18"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/second_square"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/zzz_human_male_female"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/male_female_fragment"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/zzz_human_male"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/male_fragment"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/zzz_human_female"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+
+                    android:id="@+id/female_fragment"
+
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/texto_temp_gender"
+                    android:text="Género"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/result_gender"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Ambos"
+                    />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/third_square"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/zzz_bullhorn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Alcance"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/alcance_text"
+                    android:text="18"
+                    />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/four_square"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/zzz_heart"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Intereses"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/interes_text"
+                    android:text="0"
+                    />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>

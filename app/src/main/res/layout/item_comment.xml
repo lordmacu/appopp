@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/avatar"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:civ_border_color="@color/white"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:text="Cristian garcia y este es un mensjae muy largo y este es un mensjae muy largo y este es un mensjae muy largo y este es un mensjae muy largo y este es un mensjae muy largo y este es un mensjae muy largo"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/grey"
+            android:id="@+id/created_at"
+            android:layout_height="wrap_content"
+            android:text="hace tanto tiempo"
+            />
+    </LinearLayout>
+
+</LinearLayout>

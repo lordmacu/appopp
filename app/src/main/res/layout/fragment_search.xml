@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        >
+
+        <GridView
+            android:id="@+id/grid_saves_surveys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cargando_text"
+            android:gravity="center"
+            android:text="Cargando..."
+            />
+    </RelativeLayout>
+
+</LinearLayout>

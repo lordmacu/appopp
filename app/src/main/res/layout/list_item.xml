@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        card_view:cardElevation="4dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/contenedor_imagenes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/user_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/empty_profile"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/user_image"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/container_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/image_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_image_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/container_image_item_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp">
+
+                        <ImageView
+                            android:id="@+id/image_item_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+
+                            />
+                        <com.cuboid.cuboidcirclebutton.CuboidButton
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:text="OPP\nME"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            app:cub_border_radius="0dp"
+                            app:cub_color="@color/colorPrimary"
+                            app:cub_hover_color="@color/colorHover"
+                            app:cub_riple_effect="true"
+                            android:id="@+id/vote2_1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="30dp"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/container_image_item_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp">
+
+                        <ImageView
+                            android:id="@+id/image_item_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop" />
+                        <com.cuboid.cuboidcirclebutton.CuboidButton
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:text="OPP\nME"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:id="@+id/vote2_2"
+                            app:cub_border_radius="0dp"
+                            app:cub_color="@color/colorPrimary"
+                            app:cub_hover_color="@color/colorHover"
+                            app:cub_riple_effect="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="30dp"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_image_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/container_image_item_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/image_item_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                app:cub_border_radius="0dp"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:id="@+id/vote3_1"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="30dp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_image_item_two_2_image_item_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="2dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="125dp">
+                            <ImageView
+                                android:id="@+id/image_item_two_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="125dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:id="@+id/vote3_2"
+                                app:cub_border_radius="0dp"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="30dp"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="125dp">
+                            <ImageView
+                                android:id="@+id/image_item_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="125dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:id="@+id/vote3_3"
+                                app:cub_border_radius="0dp"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="30dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container_image_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:id="@+id/container_four_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/container_image_four_one"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/image_item_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                app:cub_border_radius="0dp"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:id="@+id/vote4_1"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/container_image_four_two"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/image_item_two_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:id="@+id/vote4_2"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                app:cub_border_radius="0dp"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_four_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/container_image_four_three"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/image_item_three_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                app:cub_border_radius="0dp"
+                                android:id="@+id/vote4_3"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/container_image_four_four"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/image_item_four"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                            <com.cuboid.cuboidcirclebutton.CuboidButton
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:text="OPP\nME"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                app:cub_border_radius="0dp"
+                                app:cub_color="@color/colorPrimary"
+                                app:cub_hover_color="@color/colorHover"
+                                app:cub_riple_effect="true"
+                                android:id="@+id/vote4_4"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/container_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/hearh_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zzz_heart_outline" />
+
+                <ImageView
+                    android:id="@+id/comment_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/hearh_icon"
+
+                    android:src="@drawable/zzz_comment_outline" />
+
+                <ImageView
+                    android:id="@+id/send_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/comment_icon"
+
+                    android:src="@drawable/zzz_send" />
+
+                <ImageView
+                    android:id="@+id/bookmark_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zzz_bookmark_outline"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/count_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Me gusta"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/user_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cristian Garcia"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/comment_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/user_comment"
+                        android:text="Este es un mensaje de prueba"
+                        android:textColor="@color/black"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/comment_time_ago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hace 2 horas"
+                    android:textColor="@color/grey_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
