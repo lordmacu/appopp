@@ -16,6 +16,7 @@ public class Item  implements Serializable {
     private String haceTanto;
     private String userImage;
     private int grilla;
+    
     private ArrayList<ImageItem> images;
     private ArrayList<Interest> interests;
     private ArrayList<Comment> comments;
